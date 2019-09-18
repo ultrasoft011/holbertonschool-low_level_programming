@@ -1,9 +1,15 @@
-int main()
+#include <iostream>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-  std::cout << "Size of a char:\t\t" << sizeof(char) << " bytes\n";
-  std::cout << "Size of an int:\t\t" << sizeof(int) << " bytes\n";
-  std::cout << "Size of a long int:\t\t" << sizeof(long int) << " bytes\n";
-  std::cout << "Size long long int:\t" << sizeof(long long int) << " bytes
-    std::cout << "Size of a float:\t\t" << sizeof(float) << " bytes\n";
-    return 0;
+printf("Size of a char\n", sizeof(char));
+printf("Size of an int\n", sizeof(int));
+printf("Size of a long int\n", sizeof(long int));
+printf("Size of long long int\n", sizeof(long long int));
+printf("Size of a float\n", sizeof(float));
+return (0);
 }
