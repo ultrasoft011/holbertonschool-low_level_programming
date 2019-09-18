@@ -1,11 +1,11 @@
-# include <stdio.h>
+#include <stdio.h>
 /**
  * Hello, puts
  *
- * Return: Always0
+ * Return: Always
  */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+  puts("\"Programming is like building a multilingual puzzle");
+  return (0);
 }
