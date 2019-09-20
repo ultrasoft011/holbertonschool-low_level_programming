@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,14 +6,14 @@ include <stdio.h>
  */
 int main(void)
 {
-int al, AL;
-for (al = '0'; al <= '9'; al++)
+int nm, NM;
+for (nm = '0'; nm <= '9'; nm++)
 {
-putchar(al);
+putchar(nm);
 }
-for (AL = 'a'; AL <= 'f'; AL++)
+for (NM = 'a'; NM <= 'f'; NM++)
 {
-putchar(AL);
+putchar(NM);
 }
 putchar('\n');
 return (0);
