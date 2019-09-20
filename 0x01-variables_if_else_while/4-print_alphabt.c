@@ -9,6 +9,10 @@ int main(void)
 int al;
 for (al = 'a'; al <= 'z'; al++)
 {
+if (al == 'q' || al == 'e')
+{
+al++;
+}
 putchar(al);
 }
 putchar('\n');

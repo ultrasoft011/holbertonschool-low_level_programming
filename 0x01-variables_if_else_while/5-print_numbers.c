@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-int al;
-for (al = 'a'; al <= 'z'; al++)
+int num;
+for (num = 0; num < 10; num++)
 {
-putchar(al);
+printf("%d", num);
 }
-putchar('\n');
+printf("\n");
 return (0);
 }
