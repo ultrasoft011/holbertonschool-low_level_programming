@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * 0 Positive anything is better than negative nothing
  *
  * Return: Always 0 (Success)
  */
