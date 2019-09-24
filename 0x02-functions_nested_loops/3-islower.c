@@ -2,11 +2,11 @@
 /**
  *_islower - recognize lowercase
  *@c: First operand
- *Return:
+ *Return: 1 if c is uppercase and 0 if is lowercase
  */
 int _islower(int c)
 {
-if (c  >= 'a' && c <= 'z')
+if (c >= 'a' && c <= 'z')
 {
 return (1);
 }
