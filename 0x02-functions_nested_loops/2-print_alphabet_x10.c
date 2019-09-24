@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- *print_alphabet_x10 - prints alpabeth  10
- *
+ *print_alphabet_x10 - alphabet 10 times
+ *@i: First operand
+ *@c: Second operand
  *Return:
  */
 void print_alphabet_x10(void)
@@ -9,12 +10,12 @@ void print_alphabet_x10(void)
 int i = 0;
 while (i < 10)
 {
-int alpabeth;
-for (alpabeth = 'a'; alpabeth <= 'z'; alpabeth++)
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-_putchar(alpabeth);
+_putchar(c);
 }
-_putchar("\n");
+_putchar('\n');
 i++;
 }
 return;
