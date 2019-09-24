@@ -8,7 +8,7 @@ int _isalpha(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
-putchar('1');
+return (1);
 }
 else
 {
@@ -18,4 +18,5 @@ return (1);
 }
 else
 return (0);
+}
 }
