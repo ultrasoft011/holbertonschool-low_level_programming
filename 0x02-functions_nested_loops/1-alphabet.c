@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 int alx;
 for (alx = 'a'; alx <= 'z'; alx++)
@@ -12,5 +12,5 @@ for (alx = 'a'; alx <= 'z'; alx++)
 _putchar(alx);
 }
 _putchar('\n');
-return (0);
+return;
 }
