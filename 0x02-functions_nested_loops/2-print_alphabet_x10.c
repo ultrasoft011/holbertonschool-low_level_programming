@@ -1,35 +1,21 @@
 #include "holberton.h"
 /**
- * main - Entry point
+ *print_alphabet_x10 - prints alpabeth  10
  *
- * Return: Always 0 (Success)
+ *Return:
  */
-int main(void)
-
+void print_alphabet_x10(void)
 {
-
-  int i = 0;
-
-  while(i<10)
-
-    {
-
-      int alpabeth;
-
-      for (alpabeth = 'a'; alpabeth <= 'z'; alpabeth++)
-
-	{
-
-	  _putchar(alpabeth);
-
-	}
-
-      _putchar("\n");
-
-      i++;
-
-    }
-
-  return 0;
-
+int i = 0;
+while (i < 10)
+{
+int alpabeth;
+for (alpabeth = 'a'; alpabeth <= 'z'; alpabeth++)
+{
+_putchar(alpabeth);
+}
+_putchar("\n");
+i++;
+}
+return;
 }
