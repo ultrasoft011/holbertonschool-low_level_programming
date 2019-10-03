@@ -12,11 +12,11 @@ int counter = 0;
 
 for (counter = 0; counter < n; counter++)
 {
-if (counter == (n - 1) )  
+if (counter == (n - 1))
 {
 printf("%d", a[counter]);
 }
-else 
+else
 {
 printf("%d, ", a[counter]);
 }
