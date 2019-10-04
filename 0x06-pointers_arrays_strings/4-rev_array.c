@@ -4,25 +4,19 @@
  *reverse_array - array in reverse
  *@a: Pointer
  *@n: Variable
-  */
+ */
 
 void reverse_array(int *a, int n)
 {
+
+int i;
 int j;
-char *xstart, *yend, temp;
+int temp;
 
-for (j = 0; a[j] < n - 1; j++)
+for (i = 0, j = n - 1; j >= i; i++, j--)
 {
-yend++;
-}
-
-for (j = 0; a[j]< n / 2; j++)
-{
-temp = *yend;
-*yend = *xstart;
-*xstart = temp;
-
-xstart++;
-yend--;
+temp = a[i];
+a[i] = a[j];
+a[j] = temp;
 }
 }
