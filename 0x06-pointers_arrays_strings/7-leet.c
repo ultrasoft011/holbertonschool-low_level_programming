@@ -10,22 +10,6 @@ int i = 0;
 int j = 0;
 while (a[i] != '\0')
 {
-
-a y A
-*a[i] = 4;
-
-
-{
-
-
-
-
-
-
-if (src[i] == '\0')
-{
-dest[i] = '\0';
+i++;
 }
-}
-return (dest);
 }
