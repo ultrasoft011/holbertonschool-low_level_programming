@@ -16,7 +16,7 @@ for (j = 0; testarr1[j]; j++)
 {
 if (a[i] == testarr1[j])
 {
-a[j] = testarr2;
+a[i] = testarr2[j];
 break;
 }
 }
