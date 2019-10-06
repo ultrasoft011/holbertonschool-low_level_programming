@@ -3,7 +3,7 @@
 * *print_number - prints an intenger
 *@n: Variable
 */
-void print_number(int n);
+void print_number(int n)
 {
 if (n < 0)
 {
