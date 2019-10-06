@@ -4,7 +4,7 @@
 *@a: Pointer variable
 *Return: a
 */
-char *rot13(char *a);
+char *rot13(char *a)
 {
 int i = 0;
 int j = 0;
