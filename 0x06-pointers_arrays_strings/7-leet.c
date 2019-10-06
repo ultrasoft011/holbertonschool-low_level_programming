@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* *leet - leet speak
+**leet - leet speak
 *@a: Pointer variable
 *Return: a
 */
