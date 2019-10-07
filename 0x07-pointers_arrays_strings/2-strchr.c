@@ -17,7 +17,6 @@ return (s);
 }
 i++;
 }
-i = i + 1;
-s = s + i;
+s = 0;
 return (s);
 }
