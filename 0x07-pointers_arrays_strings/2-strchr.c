@@ -17,5 +17,7 @@ return (s);
 }
 i++;
 }
-return (s = '\0');
+i = i + 1;
+s = s + i;
+return (s);
 }
