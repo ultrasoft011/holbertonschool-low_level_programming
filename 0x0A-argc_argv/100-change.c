@@ -20,7 +20,7 @@ printf("0\n");
 }
 else
 {
-for(counter = 0; counter < 5; counter++)
+for (counter = 0; counter < 5; counter++)
 {
 while (value >= coins[counter])
 {
@@ -34,7 +34,7 @@ printf("%d\n", cents);
 else
 {
 printf("Error\n");
-return(0);
+return (0);
 }
-return(0);
+return (0);
 }
