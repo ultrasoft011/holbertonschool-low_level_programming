@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 *free_grid - free a grid
-*@width: Width
+*@grid: double pointer
 *@height: Height
 */
 void free_grid(int **grid, int height)
