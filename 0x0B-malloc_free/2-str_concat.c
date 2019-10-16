@@ -10,9 +10,11 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int count, count2, countotal, ptrcount, ptrcount2;
-	if (s1 == NULL && s2 == NULL)
-	{
+	if (s1 == NULL)
+	{	
 	s1 = "";
+	}
+	if (s2 == NULL)
 	s2 = "";
 	}
 	while (s1[count] <= '\0')
@@ -26,19 +28,19 @@ char *str_concat(char *s1, char *s2)
 	}
 	count2++;
 	countotal = count + count2;
-	ptr = malloc(countotal * sizeof(char));
+	ptr = malloc((countotal + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
-		ptr == NULL;
 		return (NULL);
 	}
-	for (ptrcount = 0; s1[ptrcount] <= '\0'; ptrcount++)
+	for (ptrcount = 0; ptrcount <= count; ptrcount++)
 	{
 		ptr[ptrcount] = s1[ptrcount];
 	}
-	for (ptrcount2 = 0; s2[ptrcount2] != '\0'; ptrcount2++)
+	for (ptrcount2 = 0; ptrcount2 <= count2; ptrcount2++)
 	{
-		ptr[ptrcount2 + ptrcount] = s2[ptrcount2];
+		ptr[count + ptrcount2]  = s2[ptrcount2];
 	}
+	ptr[count + ptrcount2] = '\0';
 	return (ptr);
 }
