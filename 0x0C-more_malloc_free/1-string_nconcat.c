@@ -23,8 +23,9 @@ while (s2[j])
 if (n >= j)
 {
 	n = j;
+ptr = malloc(sizeof(char) * (i + j + 1 + i));
 }
-ptr = malloc(sizeof(char) * (n + i));
+ptr = malloc(sizeof(char) * (n + i + 1));
 if (ptr == NULL)
 	return (NULL);
 for (a = 0; a < i; a++)
