@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
 *array_range - creates an array of integers
 *@min: min value
@@ -21,7 +20,7 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < minmaxtotal; ++i)
+for (i = 0; i <= minmaxtotal; i++)
 {
 ptr[i] = min++;
 }
