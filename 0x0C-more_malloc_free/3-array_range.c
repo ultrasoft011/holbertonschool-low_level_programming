@@ -14,8 +14,8 @@ if (min > max)
 {
 return (NULL);
 }
-int minmaxtotal = (max - min) + 1;
-ptr = malloc(sizeof(int) * (minmaxtotal));
+int minmaxtotal = max - min;
+ptr = malloc(sizeof(int) * (minmaxtotal + 1));
 if (ptr == NULL)
 {
 return (NULL);
