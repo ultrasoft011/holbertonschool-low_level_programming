@@ -1,7 +1,10 @@
-#include <stdio.h> 
-int main() 
-{ 
-   // Prints location of C this C code. 
-   printf("%s",__FILE__); 
-   printf("\n");
+/**
+ * main - show his compiler name
+ * Return: integer
+ */
+#include <stdio.h>
+int main(void)
+{
+printf("%s", __FILE__);
+printf("\n");
 }
