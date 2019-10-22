@@ -1,7 +1,7 @@
 #ifndef MY_HEADER
 #define MY_HEADER
 /**
-*struct dog_t - Django
+*struct dog - Django
 *@name: name
 *@age: age
 *@owner: owner
