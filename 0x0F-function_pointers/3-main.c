@@ -3,6 +3,7 @@
  * main - The calculator
  * @argc: argc the elements
  * @argv: the content
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
