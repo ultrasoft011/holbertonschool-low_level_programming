@@ -16,7 +16,7 @@ op_t ops[] = {
 };
 int i = 0;
 /** Loop to get inside on our structure op_t */
-while (i < 5)
+while (i <= 4)
 {
 	if (ops[i].op[0] == *s)
 	{
