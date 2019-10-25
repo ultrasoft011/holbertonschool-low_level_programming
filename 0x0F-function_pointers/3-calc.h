@@ -1,5 +1,5 @@
-#ifndef ANDRES_CALCULATOR
-#define ANDRES_CALCULATOR
+#ifndef ULTRA_CALCULATOR
+#define ULTRA_CALCULATOR
 
 /**
  * struct op - Struct op
