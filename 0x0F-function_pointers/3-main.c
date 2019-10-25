@@ -9,10 +9,8 @@ int main(int argc, char *argv[])
 	/* Declaration of the variables */
 	int a, b;
 	char *operator;
-	char *poperator;
 	int result;
 	/* Get the values and the operator */
-	poperator = argv[2];
 	operator = argv[2];
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
