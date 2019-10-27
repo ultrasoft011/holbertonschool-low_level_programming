@@ -9,29 +9,23 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int counter = 0;
-
+char *word;
 va_list allstrings;
 va_start(allstrings, n);
 
-if (separator == NULL)
-{
-	separator = "";
-}
 
-for (counter = 1; counter <= n; counter++)
+for (counter = 0; counter < n; counter++)
 {
-	if (counter == '\0')
+	word = va_arg(allstrings, char *);
+	if (word == NULL)
 	{
-		printf("nil");
+		word = "(nil)";
 	}
-	else if
-	(counter == n - 1)
+	printf("%s", word);
+	if (separator != NULL && (counter + 1 != n))
 	{
-		printf("%s%s", va_arg(allstrings, char *), separator);
-	}
-	else
-	{
-		printf("%s", va_arg(allstrings, char *));
+		printf("%s", separator);
+
 	}
 }
 printf("\n");
