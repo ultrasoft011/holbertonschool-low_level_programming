@@ -28,7 +28,7 @@ for (counter = 0; counter < n; counter++)
 	else
 	{
 		printf("%d", va_arg(allnumbers, int));
-	}	
+	}
 
 
 }
