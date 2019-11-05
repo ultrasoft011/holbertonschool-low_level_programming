@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
 * pop_listint - deletes the head node
-* @head: head node 
+* @head: head node
 * Return: an integer
 */
 int pop_listint(listint_t **head)
@@ -16,8 +16,8 @@ if (*head != NULL)
 	ptrtemp = *head;
 	*head = (*head)->next;
 	i = ptrtemp->n;
-	free (ptrtemp);
-	return(i);
+	free(ptrtemp);
+	return (i);
 }
 return (0);
 }
