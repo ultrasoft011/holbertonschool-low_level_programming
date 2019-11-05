@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* free_listint - adds a new node at the beginning of a list
+* free_listint2 - free a list
 * @head: header
 */
 void free_listint2(listint_t **head)
@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 	listint_t *ptrfree;
 
 	if (head == NULL)
-	{	
+	{
 		return;
 	}
 	ptrfree = *head;
