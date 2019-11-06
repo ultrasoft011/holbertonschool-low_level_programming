@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
 * insert_nodeint_at_index - insert a node at index
 * @head: the header
@@ -20,9 +21,9 @@ tmp = *head;
 
 	if (idx == 0)
 	{
-		newnode->n = n;
-		newnode->next = *head;
+		newnode->next = tmp;
 		*head = newnode;
+		return (newnode);
 	}
 
 	for (i = 0; i < idx - 1; i++)
