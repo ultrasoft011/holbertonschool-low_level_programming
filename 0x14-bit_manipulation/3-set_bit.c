@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-*get_bit - get a bit
+*set_bit - get a bit
 *@n: Variable n
 *@index: Position
 *Return: An integer
