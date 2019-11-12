@@ -19,7 +19,7 @@ ssize_t _read, _write;
 
 	if (filename == NULL)
 	{
-		return(0);
+		return (0);
 	}
 ab = open(filename, O_RDONLY);
 	if (ab == -1)
