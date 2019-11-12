@@ -13,27 +13,32 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int ab, cd, ef;
+int ab;
 char *buf;
-	buf = malloc(sizeof(letters));
-	if (buf == '\0')
-	{
-		return ('\0');
-	}
+ssize_t _read, _write;
 
-	ab = open(filename, O_RDONLY);
-	if (ab == '\0')
+	if (filename == NULL)
 	{
-		return (0);
+		return(0);
 	}
-
-	cd = read(ab, buf, letters);
-	if (cd == '\0')
+ab = open(filename, O_RDONLY);
+	if (ab == -1)
 	{
 		return (0);
 	}
-	ef = write(ab, filename, letters);
-
+buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+	{
+		close(ab);
+		return (0);
+	}
+_read = read(ab, buf, letters);
+	if (_read == -1)
+	{
+		return (0);
+	}
 close(ab);
-return (ef);
+_write = write(STDOUT_FILENO, buf, _read);
+
+return (_write);
 }
