@@ -18,15 +18,19 @@ ab = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	{
 		return (-1);
 	}
-	while (text_content[count])
+	if (text_content != NULL)
 	{
-		count++;
+		while (text_content[count])
+		{
+			count++;
+		}
 	}
 cd = write(ab, text_content, count);
 
 	if (cd == -1)
 	{
 		return (-1);
+		close(ab);
 	}
-return (-1);
+return (1);
 }
