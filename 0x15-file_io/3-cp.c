@@ -32,10 +32,10 @@ int file_from, file_to, file_read, file_write;
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
 	}
-	while ((file_read = read(file_from, buffer, 1024) > 0))
+	while ((file_read = read(file_from, buffer, 1024)))
 	{
 		file_write = write(file_to, buffer, file_read);
-		if (file_write < file_read)
+		if (file_write != file_read)
 		{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
 		exit(99);
