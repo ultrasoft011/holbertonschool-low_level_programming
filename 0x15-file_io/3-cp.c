@@ -44,12 +44,12 @@ int file_from, file_to, file_read, file_write;
 	}
 	if (close(file_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]);
 		exit(100);
 	}
 	if (close(file_from) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]);
 		exit(100);
 	}
 return (0);
