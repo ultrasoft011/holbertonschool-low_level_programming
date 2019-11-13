@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*create_file - create a file
+*append_text_to_file - append a file
 *@filename: filename
 *@text_content: text content
-*Return: create file
+*Return: append file
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
