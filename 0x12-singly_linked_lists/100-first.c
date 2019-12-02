@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * startupfun - Entry point
- *
- * Return: Always 0
+ *firstChain - execute the chain before the main
+ *Return: Always 0
  */
 void firstChain(void)
 {
