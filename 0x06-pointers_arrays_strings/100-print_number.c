@@ -1,22 +1,20 @@
 #include "holberton.h"
 /**
-* *print_number - prints an intenger
-*@n: Variable
-*/
+ *print_number - prints an integer
+ *@n: input number
+ */
 void print_number(int n)
 {
-if (n < 0)
-{
-_putchar('-' + '0');
-n = -n;
-}
-if (n == 0)
-{
-_putchar('0');
-}
-if (n / 10)
-{
-n = (n / 10);
-_putchar(n % 10 + '0');
-}
+	unsigned int remain = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		remain = remain * -1;
+	}
+
+	if ((remain / 10) > 0)
+		print_number(remain / 10);
+
+	_putchar((remain % 10) + '0');
 }
